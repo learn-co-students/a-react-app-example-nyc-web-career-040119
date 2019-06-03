@@ -9,18 +9,23 @@ class App extends Component {
   render() {
 
     return (
-      <div className="App">
+
+      <div id="new-way" className="App">
         <header className="App-header">
-          {moment().format('MMMM Do YYYY, hh:mm:ss a')}
+          Now
         </header>
         <p className="App-intro">
-          In React apps, we write JSX - it looks like HTML, and uses a lot HTML syntax.
+          In React apps, we write Troy JSX - it looks like HTML, and uses a lot HTML syntax.
           JSX lets us include JavaScript functions right along with the HTML, and also
           allows us to add in components, which are separate, self-contained chunks of of JSX.
         </p>
         <ExampleComponent />
+        <TestComponent />
+
+        <p>this is outside the example component</p>
 
       </div>
+
     );
   }
 }
